@@ -7,5 +7,5 @@
 ## Migations comandos:
 ```python
 npm run typeorm migration:run #Roda a migration
-npm run typeorm migration:generate -- -n migrationNameHere #Gera uma nova migration
+npm run typeorm migration:create -- -n migrationNameHere #Gera uma nova migration
 ```
