@@ -1,3 +1,6 @@
+# Base-Server.ts
+Servidor criado com a finalidade de ser utilizado de base para outros projetos.
+
 # Etapas para executar este projeto:
 
 1. Execute o comando `npm i`
