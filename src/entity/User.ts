@@ -1,11 +1,10 @@
-import {Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, OneToMany} from "typeorm"
-import { Poll } from './Poll'
+import {Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn} from "typeorm"
 
 @Entity()
 export class User {
 
-    @PrimaryGeneratedColumn()
-    id: number
+    @PrimaryGeneratedColumn('uuid')
+    id: string
 
     @Column()
     name: string
@@ -18,9 +17,6 @@ export class User {
 
     @Column()
     email: string
-
-    @OneToMany(type => Poll, poll => poll.user)
-    polls: Poll[]
 
     @CreateDateColumn()
     created_at: Date

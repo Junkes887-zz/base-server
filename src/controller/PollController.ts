@@ -5,17 +5,24 @@ import {Poll} from "../entity/Poll"
 class PollController {
     async all(request: Request, response: Response) {
         const polls = await getRepository(Poll).find({ relations: ["user"] })
+        // const polls = await getRepository(Poll).find({ relations: ["alternatives"] })
 
         return response.json(polls)
     }
 
     async one(request: Request, response: Response) {
         const { id } = request.params
+        // const poll = await getRepository(Poll)
+        //     .createQueryBuilder('poll')
+        //     .leftJoinAndSelect('poll.user', 'user')
+        //     .where('poll.id = :id', {id})
+        //     .getOne()
         const poll = await getRepository(Poll)
             .createQueryBuilder('poll')
-            .leftJoinAndSelect('poll.user', 'user')
+            .leftJoinAndSelect('poll.alternatives', 'alternative')
             .where('poll.id = :id', {id})
             .getOne()
+
         return response.json(poll)
     }
 
