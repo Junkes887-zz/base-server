@@ -7,7 +7,7 @@ Servidor criado com a finalidade de ser utilizado de base para outros projetos.
 2. Defina as configurações do banco de dados dentro do arquivo `ormconfig.json`
 3. Execute o comando `npm start`
 
-## Migations comandos:
+## Migrations comandos:
 ```python
 npm run typeorm migration:run #Roda a migration
 npm run typeorm migration:create -- -n migrationNameHere #Gera uma nova migration
