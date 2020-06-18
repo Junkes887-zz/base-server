@@ -1,0 +1,11 @@
+version: "3"
+
+services: 
+    base-server:
+        build: .
+        image: base-server-compose:tag
+        command: npm start
+        ports: 
+            - "3333:3333"
+        volumes: 
+            - .:/app/base-server

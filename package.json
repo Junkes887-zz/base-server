@@ -12,8 +12,8 @@
       "body-parser": "^1.18.1",
       "express": "^4.15.4",
       "pg": "^8.2.1",
-      "reflect-metadata": "^0.1.10",
-      "typeorm": "0.2.25",
+      "reflect-metadata": "^0.1.13",
+      "typeorm": "^0.2.25",
       "uuidv4": "^6.0.7"
    },
    "scripts": {
