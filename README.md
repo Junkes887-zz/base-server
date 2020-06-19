@@ -12,3 +12,7 @@ Servidor criado com a finalidade de ser utilizado de base para outros projetos.
 npm run typeorm migration:run #Roda a migration
 npm run typeorm migration:create -- -n migrationNameHere #Gera uma nova migration
 ```
+## Docker
+```python
+docker-compose up #Rodar o projeto
+```
