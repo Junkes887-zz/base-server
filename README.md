@@ -14,5 +14,5 @@ npm run typeorm migration:create -- -n migrationNameHere #Gera uma nova migratio
 ```
 ## Docker
 ```python
-docker-compose up #Roda o projeto
+docker-compose up
 ```
